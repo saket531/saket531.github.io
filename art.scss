@@ -1,0 +1,68 @@
+$lc: "Lucida Calligraphy";
+@mixin property{
+  margin-left: 1rem;
+  word-spacing: 4px;
+  line-height: 3rem;
+}
+@mixin font($size,$family){
+font: {
+size: $size;
+family: $family;
+}
+}
+* {
+  box-sizing: border-box;
+  border: 1px none red; }
+
+h1 {
+  width: 30rem;
+  color: red;
+  word-spacing: 2px;
+  @include font(5rem,"Vladimir Script");
+  }
+
+li {
+  display: inline-block;
+  margin: 10px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  width: 10rem;
+  border-radius: 10px;
+  @include font(2rem,Magneto);
+  }
+
+div {
+  display: flex; }
+
+ul {
+  margin: 4rem;
+  width: 40rem;
+  text-align: center; }
+
+img {
+  height: 12rem;
+  width: 16rem;
+  margin-top: 4rem; }
+
+.para {
+  @include property;
+  @include font(25px,$lc);
+  }
+
+body {
+  background-color: #c8c8c8; }
+
+h2 {
+  @include property;
+  @include font(35px,$lc);
+ }
+
+.image {
+  margin-top: 20px; }
+
+.edit {
+  background-color: black; }
+
+/*# sourceMappingURL=art.scss.map */
