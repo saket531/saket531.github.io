@@ -1,4 +1,4 @@
-$lc: "Lucida Calligraphy";
+$f: Aclonica;
 @mixin property{
   margin-left: 1rem;
   word-spacing: 4px;
@@ -18,7 +18,7 @@ h1 {
   width: 30rem;
   color: red;
   word-spacing: 2px;
-  @include font(5rem,"Vladimir Script");
+  @include font(5rem,$f);
   }
 
 li {
@@ -30,7 +30,7 @@ li {
   text-align: center;
   width: 10rem;
   border-radius: 10px;
-  @include font(2rem,Magneto);
+  @include font(2rem,$f);
   }
 
 div {
@@ -48,7 +48,7 @@ img {
 
 .para {
   @include property;
-  @include font(25px,$lc);
+  @include font(25px,$f);
   }
 
 body {
@@ -56,7 +56,7 @@ body {
 
 h2 {
   @include property;
-  @include font(35px,$lc);
+  @include font(35px,$f);
  }
 
 .image {
